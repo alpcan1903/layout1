@@ -1,0 +1,65 @@
+*{
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;   
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "sol yuvarlak1 yuvarlak2 yuvarlak3 yuvarlak4 sagust"
+    "sol tamorta tamorta tamorta sagorta sagorta"
+    "sol ortaalt ortaalt ortaalt footer footer"
+}
+header{
+    grid-area: sol;
+    background-color: coral;
+}
+.yuvarlak1{
+    grid-area: yuvarlak1;
+    background-color: rgb(90, 243, 110);
+    border-radius: 50% 
+}
+.yuvarlak2{
+    grid-area: yuvarlak2;
+    background-color: rgb(90, 243, 110);
+    border-radius: 50%
+}
+.yuvarlak3{
+    grid-area: yuvarlak3;
+    background-color: rgb(243, 182, 90);
+    border-radius: 50%
+}
+.yuvarlak4{
+    grid-area: yuvarlak4;
+    background-color: rgb(248, 122, 217);
+    border-radius: 50%
+}
+nav{
+    grid-area: sagust;
+    background-color: orange;
+}
+header{
+    grid-area: sol;
+    background-color: coral;
+}
+ 
+main{
+    grid-area: tamorta;
+    background-color: rgb(202, 230, 45);
+}
+aside {
+    grid-area: sagorta;
+    background-color: rgb(152, 75, 172);
+}
+section{
+    grid-area: ortaalt;
+    background-color: rgb(135, 135, 240);
+}
+footer{
+    grid-area: footer;
+    background-color: greenyellow;
+}
